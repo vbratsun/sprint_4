@@ -1,16 +1,16 @@
-package ru.yandex.practicum.pages;
+package ru.yandex.practicum.pages.home;
 
 import org.openqa.selenium.WebDriver;
 
-public class HomePage {
-    private final String HOME_PAGE_URL = "https://qa-scooter.praktikum-services.ru/";
+import static ru.yandex.practicum.pages.constants.Urls.HOME_PAGE_URL;
 
-    private WebDriver driver;
+public class HomePage {
+    private final WebDriver driver;
     private AccordionItem accordionItem;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.driver.get(this.HOME_PAGE_URL);
+        this.driver.get(HOME_PAGE_URL);
     }
 
     public AccordionItem getAccordionItem(int index) {

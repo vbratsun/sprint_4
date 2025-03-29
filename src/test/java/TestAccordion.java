@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import ru.yandex.practicum.pages.AccordionItem;
-import ru.yandex.practicum.pages.HomePage;
+import ru.yandex.practicum.pages.home.AccordionItem;
+import ru.yandex.practicum.pages.home.HomePage;
 
 @RunWith(Parameterized.class)
 public class TestAccordion {

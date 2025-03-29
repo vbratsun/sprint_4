@@ -1,4 +1,4 @@
-package ru.yandex.practicum.pages;
+package ru.yandex.practicum.pages.home;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class AccordionItem {
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private By questionElementSelector;
-    private By answerElementSelector;
+    private final By questionElementSelector;
+    private final By answerElementSelector;
 
     public AccordionItem(WebDriver driver, int index) {
         this.driver = driver;
